@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1!= 'Search Results for: ' + searchText
+  h1 Search Results for: #{escape(searchText)}
   table
     tr
       th Id
