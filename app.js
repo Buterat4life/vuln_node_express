@@ -12,13 +12,8 @@ var robots = require('express-robots-txt')
 
 var app = express();
 
-
-
 app.disable('x-powered-by');
 
-
-
-// Установка заголовка Content-Security-Policy
 app.use(
   helmet.contentSecurityPolicy({
     directives: {
@@ -31,11 +26,7 @@ app.use(
   })
 );
 
-
-
-// Добавление заголовка X-Content-Type-Options
 app.use(helmet.xContentTypeOptions());
-
 
 app.use(robots({
     UserAgent: '*',
