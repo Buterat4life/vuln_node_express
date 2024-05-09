@@ -17,11 +17,11 @@ app.disable('x-powered-by');
 app.use(
   helmet.contentSecurityPolicy({
     directives: {
-      defaultSrc: ["'self'"], // Разрешаем загрузку ресурсов только из текущего источника
-      scriptSrc: ["'self'"], // Разрешаем загрузку скриптов только из текущего источника
-      styleSrc: ["'self'"], // Разрешаем загрузку стилей только из текущего источника
-      fontSrc: ["'self'"], // Разрешаем загрузку шрифтов только из текущего источника
-      imgSrc: ["'self'"], // Разрешаем загрузку изображений только из текущего источника
+      defaultSrc: ["'self'"], 
+      scriptSrc: ["'self'"], 
+      styleSrc: ["'self'"], 
+      fontSrc: ["'self'"],
+      imgSrc: ["'self'"], 
     },
   })
 );
